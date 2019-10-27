@@ -38,7 +38,13 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        '@gridsome/remark-prismjs'
+        '@gridsome/remark-prismjs',
+        {
+          use: '@gridsome/plugin-google-analytics',
+          options: {
+            id: 'UA-18687286-4'
+          }
+        }
       ]
     }
   }
