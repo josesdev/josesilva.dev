@@ -1,5 +1,5 @@
 {
-  "name": "gridsome-starter-blog",
+  "name": "josesilva.dev",
   "private": true,
   "scripts": {
     "build": "gridsome build",
