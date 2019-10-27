@@ -9,9 +9,9 @@ canonical_url: false
 description: "Javascript is constantly evolving and receiving updates every year. It is useful to learn as soon as possible to avoid being stumped by syntax and stay productive in any JavaScript codebase."  
 ---
 
-ECMAScript (ES) is the specification which JavaScript is based. This language is constantly evolving and receiving updates every year. It is useful to learn as soon as possible to avoid being stumped by syntax and stay productive in any JavaScript codebase.
+ECMAScript (ES) is the specification on which JavaScript is based. This language is constantly evolving and receiving updates every year. It is useful to keep up to avoid being stumped by syntax and stay productive in any JavaScript codebase.
 
-ES2019 is available in the latest version of Chrome, Firefox, Safari, and Node, and are available via compilation with Babel or Typescript.
+ES2019 is available in the latest version of Chrome, Firefox, Safari, and Node. It is also available in older platforms via compilation with Babel or Typescript. Remember to always check [Can I Use](https://caniuse.com) website to make sure the new feature you want to use is available in your target platforms.
 
 1. Array.flat()
 2. Array.flatMap()
@@ -24,7 +24,7 @@ ES2019 is available in the latest version of Chrome, Firefox, Safari, and Node, 
 9. JSON improvements
 
 ## Array.flat()
-The `flat()` method creates a *new array* flattering all the sub-array elements recursively up to the specified depth.
+The `flat()` method returns a *new array* flattering all the sub-array elements recursively up to the specified depth.
 
 ```js
 const a1 = [1, 2, [3, 4], 5];
@@ -38,7 +38,7 @@ const a2 = [1, 2, [[3, [4, 5]], 6], 7];
 console.log(a2.flat(Infinity)); // OUTPUT: [1, 2, 3, 4, 5, 6, 7]
 ```
 
-And, if you have an empty element part of you `Array`, it'll be removed in the new `Array`
+And, if you have an empty element as part of you `Array`, it'll be removed in the new `Array`
 
 ```js
 const a3 = [1, 2, , 5];
@@ -46,7 +46,7 @@ console.log(a3.flat()); // OUTPUT: [1, 2, 5]
 ```
 
 ## Array.flatMap()
-It produces a *new array* combining `flat()` and `map()` methods. To remember, ES6 `map()` method of an `Array` returns a new `Array` applying a function to all of its elements. 
+It returns a *new array* combining `flat()` and `map()` methods. Remember: ES6 `map()` method of an `Array` returns a new `Array` applying a function to each of its elements. 
 
 Suppose we want to double each element of an array and put the result after each one of these elements:
 
@@ -72,7 +72,7 @@ console.log(b5); // OUTPUT: [2, 4, 8, 16, 32, 64]
 
 ## String.trimStart() and String.trimEnd()
 
-`String.trim()` removes the whitespaces from the beggining and the end of a `String` so using `String.trimStart()` will only remove the whitespaces from the beggining of the string while use `String.trimEnd()` will do but with the whitspaces from the end.
+`String.trim()` removes the whitespaces from the beginning and the end of a `String` so using `String.trimStart()` will only remove the whitespaces from the beginning of the string while use `String.trimEnd()` will do but with the whitespaces from the end.
 
 ```js
 const c1 = '      Start here.      ';
@@ -125,7 +125,7 @@ console.log(d4);
 
 ## Optional Catch Binding
 
-It allows to use the `catch()` without the need to specify the parameter (the exception).
+It allows to use the `catch()` clause without the need to specify the parameter (the exception).
 
 ```js
 try {
