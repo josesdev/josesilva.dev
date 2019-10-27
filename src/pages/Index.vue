@@ -21,7 +21,7 @@ query {
         date (format: "D. MMMM YYYY")
         timeToRead
         description
-        cover_image (width: 770, height: 380, blur: 10)
+        cover_image (width: 300, height: 300, blur: 10)
         path
         tags {
           id
@@ -44,7 +44,7 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: 'Hello, world!'
+    titleTemplate: 'José Silva',
   }
 }
 </script>

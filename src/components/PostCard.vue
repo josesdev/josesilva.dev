@@ -32,14 +32,16 @@ export default {
 .post-card {
   margin-bottom: var(--space);
   position: relative;
+  overflow: hidden;
 
   &__header {
-    margin-left: calc(var(--space) * -1);
-    margin-right: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    margin-top: calc(var(--space) * -1);
+    margin-left: calc(var(--space) * -0.5);
+    margin-right: calc(var(--space) * 0.5);
+    margin-bottom: 0;
+    margin-top: 0;
     overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
+    width: 20%;
+    float: left;
 
     &:empty {
       display: none;
@@ -48,6 +50,7 @@ export default {
 
   &__image {
     min-width: 100%;
+    border-radius: var(--radius);
   }
 
   &__title {
@@ -55,7 +58,6 @@ export default {
   }
 
   &:hover {
-    transform: translateY(-5px);
     box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
   }
 

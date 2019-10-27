@@ -10,9 +10,6 @@
     </div>
 
     <div class="post content-box">
-      <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
-      </div>
 
       <div class="post__content" v-html="$page.post.content" />
 
@@ -101,11 +98,6 @@ query Post ($id: ID!) {
   &__content {
     h2:first-child {
       margin-top: 0;
-    }
-
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
     }
 
     img {
