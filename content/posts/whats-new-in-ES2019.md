@@ -7,6 +7,8 @@ series: false
 cover_image: ./images/javascript.jpg
 canonical_url: false
 description: "Javascript is constantly evolving and receiving updates every year. It is useful to learn as soon as possible to avoid being stumped by syntax and stay productive in any JavaScript codebase."  
+slug: whats-new-in-es2019
+author: 'José Silva'
 ---
 
 ECMAScript (ES) is the specification on which JavaScript is based. This language is constantly evolving and receiving updates every year. It is useful to keep up to avoid being stumped by syntax and stay productive in any JavaScript codebase.

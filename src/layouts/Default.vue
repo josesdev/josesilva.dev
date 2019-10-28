@@ -15,6 +15,14 @@
       <slot/>
     </main>
 
+    <footer class="footer">
+      <span class="footer__links">
+        <a href="/rss.xml">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+          <span>RSS</span>
+        </a>
+      </span>
+    </footer>
   </div>
 </template>
 
@@ -60,5 +68,28 @@ export default {
 .main {
   margin: 0 auto;
   padding: 1.5vw 15px 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--space) / 2);
+  text-align: center;
+  font-size: .8em;
+
+  span {
+    margin: 0 .35em;
+    vertical-align: middle;
+  }
+
+  a {
+    text-decoration: none;
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
 }
 </style>

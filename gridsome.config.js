@@ -7,9 +7,10 @@
 module.exports = {
   siteName: 'José Silva',
   siteDescription: 'Full-Stack Web Developer.',
+  siteUrl: 'http://localhost:8080',
 
   templates: {
-    Post: '/:title',
+    Post: '/:slug',
     Tag: '/tag/:id'
   },
 
@@ -28,6 +29,33 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-18687286-4'
+      }
+    },
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        contentTypeName: 'Post',
+        feedOptions: {
+          title: 'José Silva',
+          feed_url: this.siteUrl + '/rss',
+          site_url: this.siteUrl
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          description: node.description,
+          url: this.siteUrl + '/' + node.slug,
+          author: node.author
+        }),
+        output: {
+          dir: './static',
+          name: 'rss'
+        }
+      }
     }
   ],
 
@@ -39,12 +67,6 @@ module.exports = {
       anchorClassName: 'icon icon-link',
       plugins: [
         '@gridsome/remark-prismjs',
-        {
-          use: '@gridsome/plugin-google-analytics',
-          options: {
-            id: 'UA-18687286-4'
-          }
-        }
       ]
     }
   }
