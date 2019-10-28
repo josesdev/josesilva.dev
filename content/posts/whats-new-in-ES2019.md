@@ -119,8 +119,8 @@ console.log(d4);
 /* OUTPUT:
 {
   prop1: 4,
-  prop1: 16,
-  prop1: 64,
+  prop2: 16,
+  prop3: 64,
 }
 */
 ```
