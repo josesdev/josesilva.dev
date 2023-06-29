@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <header class="header">
+    <header class="header no-print">
       <div class="header__left">
         <Logo v-if="showLogo" />
       </div>
@@ -15,7 +15,7 @@
       <slot/>
     </main>
 
-    <footer class="footer">
+    <footer class="footer no-print">
       <span class="footer__links">
         <a href="/rss.xml">
           <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
@@ -90,6 +90,14 @@ export default {
       display: inline-block;
       vertical-align: middle;
     }
+  }
+}
+
+@media print
+{
+  .no-print, .no-print *
+  {
+    display: none !important;
   }
 }
 </style>
