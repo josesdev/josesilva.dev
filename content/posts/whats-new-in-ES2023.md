@@ -20,7 +20,7 @@ ECMAScript 2023 is here! 🚀 These are the features that will become part of th
 
 # Change Array by copy
 
-Gives new methods to Array.prototype and TypedArray.prototype to perform certain actions in a new copy of the array, that means without mutating the original array.
+Gives new methods to `Array.prototype` and `TypedArray.prototype` to perform certain actions in a new copy of the array, that means without mutating the original array.
 
 The `reverse()`, `sort()` and `splice()` methods mutate the array, so using the new `toReversed()`, `toSorted()` and `toSpliced()` you can reverse, sort and splice without mutating the target array.
 
@@ -66,11 +66,11 @@ original; // [1, 3, 3, 4, 5]
 newCorrected; // [1, 2, 3, 4, 5]
 ```
 
-`toReversed`, `toSorted`, and `with` will also be added to TypedArrays.
+`toReversed`, `toSorted`, and `with` will also be added to `TypedArrays`.
 
 # Array find from last index
 
-Adds new methods to Array.prototype and TypedArray.prototype: `findLast()` and `findLastIndex()` to search an array starting from the end instead of the beginning, that means in the reverse order of `find()` and `findIndex()`. It can be useful when you know that finding an element from last to first will have a better performance or, in case the array is sorted and you care about the order of elements.
+Adds new methods to `Array.prototype` and `TypedArray.prototype`: `findLast()` and `findLastIndex()` to search an array starting from the end instead of the beginning, that means in the reverse order of `find()` and `findIndex()`. It can be useful when you know that finding an element from last to first will have a better performance or, in case the array is sorted and you care about the order of elements.
 
 So it solves the issues that the workaround `[].reverse().find()` has:
 
@@ -87,7 +87,7 @@ values.findLastIndex(isValueOdd); // 2
 
 # Symbols as WeakMap keys
 
-This allows using unique Symbols as keys of a WeakMap that were previously limited to using Objects as keys.
+This allows using unique `Symbols` as keys of a `WeakMap` that were previously limited to using `Objects` as keys.
 
 ```js
 const weakMap = new WeakMap();
