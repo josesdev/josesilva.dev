@@ -4,7 +4,7 @@ date: 2019-10-28
 published: true
 tags: ['JavaScript', 'ES2019', 'ES10']
 series: false
-cover_image: ./images/javascript-2019.jpg
+cover_image: ./images/javascript-2019.png
 canonical_url: false
 description: "Javascript is constantly evolving and receiving updates every year. It is useful to learn as soon as possible to avoid being stumped by syntax and stay productive in any JavaScript codebase."  
 slug: whats-new-in-es2019
