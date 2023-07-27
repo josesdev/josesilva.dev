@@ -30,21 +30,21 @@ The `flat()` method returns a *new array* flattering all the sub-array elements 
 
 ```js
 const a1 = [1, 2, [3, 4], 5];
-console.log(a1.flat()); // OUTPUT: [1, 2, 3, 4, 5]
+a1.flat(); // [1, 2, 3, 4, 5]
 ```
 
 By default it only flats one level `flat(1)`, but you can convert any `Array` multi-dimensional to one-dimension using `Infinity`.
 
 ```js
 const a2 = [1, 2, [[3, [4, 5]], 6], 7];
-console.log(a2.flat(Infinity)); // OUTPUT: [1, 2, 3, 4, 5, 6, 7]
+a2.flat(Infinity); // [1, 2, 3, 4, 5, 6, 7]
 ```
 
 And, if you have an empty element as part of you `Array`, it'll be removed in the new `Array`
 
 ```js
 const a3 = [1, 2, , 5];
-console.log(a3.flat()); // OUTPUT: [1, 2, 5]
+a3.flat(); // [1, 2, 5]
 ```
 
 ## Array.flatMap()
@@ -57,9 +57,9 @@ const b1 = [2, 8, 32];
 const b2 = b1.map(el => {
   return [el, el * 2];
 });
-console.log(b2); // OUTPUT: [[2, 4], [8, 16], [32, 64]]
+b2; // [[2, 4], [8, 16], [32, 64]]
 const b3 = b2.flat();
-console.log(b3); // OUTPUT: [2, 4, 8, 16, 32, 64]
+b3; // [2, 4, 8, 16, 32, 64]
 ```
 
 Using `flatMap()`
@@ -69,7 +69,7 @@ const b4 = [2, 8, 32];
 const b5 = b4.flatMap(el => {
   return [el, el * 2];
 });
-console.log(b5); // OUTPUT: [2, 4, 8, 16, 32, 64]
+b5; // [2, 4, 8, 16, 32, 64]
 ```
 
 ## String.trimStart() and String.trimEnd()
@@ -79,13 +79,13 @@ console.log(b5); // OUTPUT: [2, 4, 8, 16, 32, 64]
 ```js
 const c1 = '      Start here.      ';
 const c2 = c1.trimStart();
-console.log(c2); // OUTPUT: 'Start here.      ' (with the spaces at the end)
+c2; // 'Start here.      ' (with the spaces at the end)
 ```
 
 ```js
 const c3 = '      End here.      ';
 const c4 = c3.trimEnd();
-console.log(c4); // OUTPUT: '      End here.' (with the spaces at the beggining)
+c4; // '      End here.' (with the spaces at the beggining)
 ```
 
 ## Object.fromEntries(iterable)
@@ -101,22 +101,22 @@ const d1 = {
   prop3: 32
 };
 const d2 = Object.entries(d1);
-console.log(d2); // OUTPUT: [["prop1", 2], ["prop2", 8], ["prop3", 32]]
+d2; // [["prop1", 2], ["prop2", 8], ["prop3", 32]]
 ```
 
 With `map()` we can iterate over each element and apply the function to double each value:
 
 ```js
 const d3 = d2.map(([key, value]) => [key, value * 2]);
-console.log(d3); // OUTPUT: [["prop1", 4], ["prop2", 16], ["prop3", 64]]
+d3; // [["prop1", 4], ["prop2", 16], ["prop3", 64]]
 ```
 
 Now, using `fromEntries()` method we will generate the `Object` with the values changed.
 
 ```js
 const d4 = Object.fromEntries(d3);
-console.log(d4);
-/* OUTPUT:
+d4;
+/*
 {
   prop1: 4,
   prop2: 16,
@@ -153,7 +153,7 @@ It allows to provide a description when creating a `Symbol` via the factory func
 
 ```js
 const e1 = Symbol('Optional description');
-console.log(e1.description); // OUTPUT: 'Optional description'
+e1.description; // 'Optional description'
 ```
 
 ## Function.prototype.toString()
@@ -164,14 +164,14 @@ Previous ES10
 
 ```js
 const fn = function /* initial test */ test() {};
-fn.toString(); // OUTPUT: 'function test() {}'
+fn.toString(); // 'function test() {}'
 ```
 
 Now it will be:
 
 ```js
 const fn = function /* initial test */ test() {};
-fn.toString(); // OUTPUT: 'function /* initial test */ test() {}'
+fn.toString(); // 'function /* initial test */ test() {}'
 ```
 
 ## JSON improvements
