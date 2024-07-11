@@ -8,7 +8,7 @@
 		</h1>
 
 		<p class="author__intro">
-			I'm a Full-Stack Web Developer. Mainly working with Vue.js, Laravel and Python.
+			Full-Stack Web Developer.
 		</p>
 
 		<p class="author__links">
