@@ -3,7 +3,7 @@
     <div class="cv__container">
       <div class="cv__content">
         <h1>Jose Gabriel Silva</h1>
-        <h3>Senior Frontend Developer</h3>
+        <h3>Software Engineer</h3>
         <div class="cv__intro">
           <div class="cv__intro_item">
             <icon-email></icon-email>
