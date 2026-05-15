@@ -3,7 +3,7 @@
     <div class="cv__container">
       <div class="cv__content">
         <h1>Jose Gabriel Silva</h1>
-        <h3>Software Engineer</h3>
+        <h3>Senior Frontend Developer</h3>
         <div class="cv__intro">
           <div class="cv__intro_item">
             <icon-email></icon-email>
@@ -13,7 +13,7 @@
           </div>
           <div class="cv__intro_item">
             <icon-map></icon-map>
-            <span>Formosa, Argentina</span>
+            <span>Asunción, Paraguay</span>
           </div>
           <div class="cv__intro_item">
             <icon-link></icon-link>
@@ -30,8 +30,20 @@
           </div>
           <div class="cv__work_item">
             <div class="cv__work_item_title">
+              <span class="font-bold">Senior Frontend Developer @ <a href="https://kopiustech.com/" target="_blank">Kopius</a></span>
+              <span class="date">Jul 2023 - Present</span>
+            </div>
+            <div class="cv__work_item_content">
+              <p>Project: <a href="https://www.shipbob.com/" target="_blank">ShipBob</a> – E-commerce fulfillment platform.</p>
+              <ul>
+                <li>Development of UI solutions in Vue.js and backend in .NET, Azure, MongoDB.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cv__work_item">
+            <div class="cv__work_item_title">
               <span class="font-bold">Senior Frontend Developer @ <a href="https://agileengine.com/" target="_blank">Agile Engine</a></span>
-              <span class="date">May 2021 - Present</span>
+              <span class="date">May 2021 - Jul 2023</span>
             </div>
             <div class="cv__work_item_content">
               <p>Project: Dialpad – Cloud-based voice intelligence software.</p>
@@ -112,15 +124,15 @@
               <tbody>
                 <tr>
                   <td>Languages and Frameworks</td>
-                  <td>JavaScript, Vue.js, Vuex, Vue Router, HTML, CSS, jQuery, Node.js, Jest, Cypress, Python, Django, PHP, Laravel, JSON, JSON Web Tokens, GraphQL, Bash, Websockets;</td>
+                  <td>JavaScript, Vue.js, Vuex, Vue Router, HTML, CSS, jQuery, Node.js, Jest, Cypress, Python, Django, PHP, Laravel, .NET, JSON, JSON Web Tokens, GraphQL, Bash, Websockets;</td>
                 </tr>
                 <tr>
                   <td>OS & Platforms</td>
-                  <td>Google Cloud Platform, DigitalOcean, Linux (Ubuntu, Debian, Alpine), Docker;</td>
+                  <td>Google Cloud Platform, Azure, DigitalOcean, Linux (Ubuntu, Debian, Alpine), Docker;</td>
                 </tr>
                 <tr>
                   <td>DBMS</td>
-                  <td>MySQL, MariaDB, PostgreSQL;</td>
+                  <td>MySQL, MariaDB, PostgreSQL, MongoDB;</td>
                 </tr>
                 <tr>
                   <td>VCS, Build, CI/CD</td>
